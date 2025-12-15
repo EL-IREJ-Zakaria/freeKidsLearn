@@ -1,0 +1,184 @@
+[
+  {
+    "id": 101,
+    "letter": "A",
+    "name": "A",
+    "type": "FRENCH",
+    "animal": "🐊 Alligator"
+  },
+  {
+    "id": 102,
+    "letter": "B",
+    "name": "Bé",
+    "type": "FRENCH",
+    "animal": "🐝 Baleine"
+  },
+  {
+    "id": 103,
+    "letter": "C",
+    "name": "Cé",
+    "type": "FRENCH",
+    "animal": "🐱 Chat"
+  },
+  {
+    "id": 104,
+    "letter": "D",
+    "name": "Dé",
+    "type": "FRENCH",
+    "animal": "🐬 Dauphin"
+  },
+  {
+    "id": 105,
+    "letter": "E",
+    "name": "E",
+    "type": "FRENCH",
+    "animal": "🐘 Éléphant"
+  },
+  {
+    "id": 106,
+    "letter": "F",
+    "name": "Effe",
+    "type": "FRENCH",
+    "animal": "🦊 Renard"
+  },
+  {
+    "id": 107,
+    "letter": "G",
+    "name": "Gé",
+    "type": "FRENCH",
+    "animal": "🦒 Girafe"
+  },
+  {
+    "id": 108,
+    "letter": "H",
+    "name": "Hache",
+    "type": "FRENCH",
+    "animal": "🦔 Hérisson"
+  },
+  {
+    "id": 109,
+    "letter": "I",
+    "name": "I",
+    "type": "FRENCH",
+    "animal": "🦎 Iguane"
+  },
+  {
+    "id": 110,
+    "letter": "J",
+    "name": "Ji",
+    "type": "FRENCH",
+    "animal": "🐆 Jaguar"
+  },
+  {
+    "id": 111,
+    "letter": "K",
+    "name": "Ka",
+    "type": "FRENCH",
+    "animal": "🦘 Kangourou"
+  },
+  {
+    "id": 112,
+    "letter": "L",
+    "name": "Elle",
+    "type": "FRENCH",
+    "animal": "🦁 Lion"
+  },
+  {
+    "id": 113,
+    "letter": "M",
+    "name": "Emme",
+    "type": "FRENCH",
+    "animal": "🐵 Singe"
+  },
+  {
+    "id": 114,
+    "letter": "N",
+    "name": "Enne",
+    "type": "FRENCH",
+    "animal": "🦏 Narval"
+  },
+  {
+    "id": 115,
+    "letter": "O",
+    "name": "O",
+    "type": "FRENCH",
+    "animal": "🦉 Hibou"
+  },
+  {
+    "id": 116,
+    "letter": "P",
+    "name": "Pé",
+    "type": "FRENCH",
+    "animal": "🐧 Pingouin"
+  },
+  {
+    "id": 117,
+    "letter": "Q",
+    "name": "Ku",
+    "type": "FRENCH",
+    "animal": "🦆 Canard"
+  },
+  {
+    "id": 118,
+    "letter": "R",
+    "name": "Erre",
+    "type": "FRENCH",
+    "animal": "🦝 Raton laveur"
+  },
+  {
+    "id": 119,
+    "letter": "S",
+    "name": "Esse",
+    "type": "FRENCH",
+    "animal": "🐍 Serpent"
+  },
+  {
+    "id": 120,
+    "letter": "T",
+    "name": "Té",
+    "type": "FRENCH",
+    "animal": "🐯 Tigre"
+  },
+  {
+    "id": 121,
+    "letter": "U",
+    "name": "U",
+    "type": "FRENCH",
+    "animal": "🦄 Licorne"
+  },
+  {
+    "id": 122,
+    "letter": "V",
+    "name": "Vé",
+    "type": "FRENCH",
+    "animal": "🦅 Vautour"
+  },
+  {
+    "id": 123,
+    "letter": "W",
+    "name": "Double-vé",
+    "type": "FRENCH",
+    "animal": "🐋 Baleine"
+  },
+  {
+    "id": 124,
+    "letter": "X",
+    "name": "Ixe",
+    "type": "FRENCH",
+    "animal": "🦎 Xérus"
+  },
+  {
+    "id": 125,
+    "letter": "Y",
+    "name": "I grec",
+    "type": "FRENCH",
+    "animal": "🦬 Yak"
+  },
+  {
+    "id": 126,
+    "letter": "Z",
+    "name": "Zède",
+    "type": "FRENCH",
+    "animal": "🦓 Zèbre"
+  }
+]

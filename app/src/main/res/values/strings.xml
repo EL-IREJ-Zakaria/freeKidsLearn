@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">Kids Learning</string>
+
+    <!-- Home screen -->
+    <string name="welcome_title">Bienvenue!</string>
+    <string name="choose_language">Choisir une langue</string>
+    <string name="arabic_alphabet">Alphabet Arabe</string>
+    <string name="french_alphabet">Alphabet Français</string>
+
+    <!-- Alphabet list -->
+    <string name="letters_title">Lettres</string>
+
+    <!-- Letter tracing -->
+    <string name="trace_letter">Tracer la lettre</string>
+    <string name="clear_button">Effacer</string>
+    <string name="repeat_sound">Répéter</string>
+    <string name="next_letter">Suivant</string>
+    <string name="previous_letter">Précédent</string>
+
+    <!-- Messages -->
+    <string name="great_job">Bravo!</string>
+    <string name="try_again">Essayer encore</string>
+</resources>

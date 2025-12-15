@@ -1,0 +1,198 @@
+[
+  {
+    "id": 1,
+    "letter": "ا",
+    "name": "Alif",
+    "type": "ARABIC",
+    "animal": "🦁 Asad (Lion)"
+  },
+  {
+    "id": 2,
+    "letter": "ب",
+    "name": "Ba",
+    "type": "ARABIC",
+    "animal": "🦆 Batta (Canard)"
+  },
+  {
+    "id": 3,
+    "letter": "ت",
+    "name": "Ta",
+    "type": "ARABIC",
+    "animal": "🐊 Timsah (Crocodile)"
+  },
+  {
+    "id": 4,
+    "letter": "ث",
+    "name": "Tha",
+    "type": "ARABIC",
+    "animal": "🐍 Thoubane (Serpent)"
+  },
+  {
+    "id": 5,
+    "letter": "ج",
+    "name": "Jim",
+    "type": "ARABIC",
+    "animal": "🐪 Jamal (Chameau)"
+  },
+  {
+    "id": 6,
+    "letter": "ح",
+    "name": "Ha",
+    "type": "ARABIC",
+    "animal": "🐴 Hisan (Cheval)"
+  },
+  {
+    "id": 7,
+    "letter": "خ",
+    "name": "Kha",
+    "type": "ARABIC",
+    "animal": "🐑 Kharouf (Mouton)"
+  },
+  {
+    "id": 8,
+    "letter": "د",
+    "name": "Dal",
+    "type": "ARABIC",
+    "animal": "🐻 Dob (Ours)"
+  },
+  {
+    "id": 9,
+    "letter": "ذ",
+    "name": "Dhal",
+    "type": "ARABIC",
+    "animal": "🦊 Dhib (Loup)"
+  },
+  {
+    "id": 10,
+    "letter": "ر",
+    "name": "Ra",
+    "type": "ARABIC",
+    "animal": "🦌 Raim (Gazelle)"
+  },
+  {
+    "id": 11,
+    "letter": "ز",
+    "name": "Zay",
+    "type": "ARABIC",
+    "animal": "🦒 Zarafa (Girafe)"
+  },
+  {
+    "id": 12,
+    "letter": "س",
+    "name": "Sin",
+    "type": "ARABIC",
+    "animal": "🐢 Soulfat (Tortue)"
+  },
+  {
+    "id": 13,
+    "letter": "ش",
+    "name": "Shin",
+    "type": "ARABIC",
+    "animal": "🦈 Shark (Requin)"
+  },
+  {
+    "id": 14,
+    "letter": "ص",
+    "name": "Sad",
+    "type": "ARABIC",
+    "animal": "🦅 Saqr (Faucon)"
+  },
+  {
+    "id": 15,
+    "letter": "ض",
+    "name": "Dad",
+    "type": "ARABIC",
+    "animal": "🐸 Difdaa (Grenouille)"
+  },
+  {
+    "id": 16,
+    "letter": "ط",
+    "name": "Ta",
+    "type": "ARABIC",
+    "animal": "🦜 Tayr (Oiseau)"
+  },
+  {
+    "id": 17,
+    "letter": "ظ",
+    "name": "Za",
+    "type": "ARABIC",
+    "animal": "🦌 Zabi (Cerf)"
+  },
+  {
+    "id": 18,
+    "letter": "ع",
+    "name": "Ayn",
+    "type": "ARABIC",
+    "animal": "🦎 Assaya (Lézard)"
+  },
+  {
+    "id": 19,
+    "letter": "غ",
+    "name": "Ghayn",
+    "type": "ARABIC",
+    "animal": "🦅 Ghorab (Corbeau)"
+  },
+  {
+    "id": 20,
+    "letter": "ف",
+    "name": "Fa",
+    "type": "ARABIC",
+    "animal": "🐘 Fil (Éléphant)"
+  },
+  {
+    "id": 21,
+    "letter": "ق",
+    "name": "Qaf",
+    "type": "ARABIC",
+    "animal": "🐱 Qit (Chat)"
+  },
+  {
+    "id": 22,
+    "letter": "ك",
+    "name": "Kaf",
+    "type": "ARABIC",
+    "animal": "🐕 Kalb (Chien)"
+  },
+  {
+    "id": 23,
+    "letter": "ل",
+    "name": "Lam",
+    "type": "ARABIC",
+    "animal": "🦁 Layth (Lion)"
+  },
+  {
+    "id": 24,
+    "letter": "م",
+    "name": "Mim",
+    "type": "ARABIC",
+    "animal": "🐐 Maaz (Chèvre)"
+  },
+  {
+    "id": 25,
+    "letter": "ن",
+    "name": "Nun",
+    "type": "ARABIC",
+    "animal": "🐝 Nahlé (Abeille)"
+  },
+  {
+    "id": 26,
+    "letter": "ه",
+    "name": "Ha",
+    "type": "ARABIC",
+    "animal": "🦔 Qonfouz (Hérisson)"
+  },
+  {
+    "id": 27,
+    "letter": "و",
+    "name": "Waw",
+    "type": "ARABIC",
+    "animal": "🦆 Wazz (Oie)"
+  },
+  {
+    "id": 28,
+    "letter": "ي",
+    "name": "Ya",
+    "type": "ARABIC",
+    "animal": "🦬 Yakhmour (Cerf)"
+  }
+]
