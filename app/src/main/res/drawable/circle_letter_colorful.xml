@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?><!-- ========================================================================
+     CIRCLE_LETTER_COLORFUL.XML - Cercle coloré arc-en-ciel pour les lettres
+     ======================================================================== -->
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Ombre douce -->
+    <item
+        android:bottom="2dp"
+        android:right="2dp">
+        <shape android:shape="oval">
+            <solid android:color="@color/shadow" />
+        </shape>
+    </item>
+
+    <!-- Cercle principal avec dégradé -->
+    <item>
+        <shape android:shape="oval">
+            <gradient
+                android:type="linear"
+                android:angle="135"
+                android:startColor="@color/rainbow_blue"
+                android:centerColor="@color/rainbow_purple"
+                android:endColor="@color/rainbow_pink" />
+        </shape>
+    </item>
+
+</layer-list>

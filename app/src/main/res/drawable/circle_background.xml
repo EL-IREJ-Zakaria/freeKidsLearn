@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?><!-- ========================================================================
+     CIRCLE_BACKGROUND.XML - Cercle coloré pour les lettres
+     ========================================================================
+     Fond circulaire avec dégradé pour afficher les lettres de façon moderne.
+     Utilisé dans item_letter.xml pour mettre en valeur chaque lettre.
+     ======================================================================== -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="oval">
+
+    <!-- Dégradé du bleu vers le violet - effet moderne -->
+    <gradient
+        android:type="linear"
+        android:angle="135"
+        android:startColor="@color/rainbow_blue"
+        android:endColor="@color/rainbow_purple" />
+
+</shape>

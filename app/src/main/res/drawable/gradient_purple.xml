@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?><!-- ========================================================================
+     GRADIENT_PURPLE.XML - Dégradé violet pour la carte arabe
+     ======================================================================== -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+
+    <gradient
+        android:type="linear"
+        android:angle="135"
+        android:startColor="@color/button_arabic_gradient_start"
+        android:endColor="@color/button_arabic_gradient_end" />
+
+    <corners android:radius="28dp" />
+
+</shape>
