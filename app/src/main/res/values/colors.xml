@@ -1,26 +1,121 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <!-- ====================================================================
+         COLORS.XML - Palette de couleurs moderne pour enfants
+         ====================================================================
+         Design inspiré des applications éducatives modernes comme Khan Kids,
+         Duolingo ABC, et Endless Alphabet.
+         
+         Palette pastel douce mais vivante, adaptée aux yeux des enfants.
+         ==================================================================== -->
+
+    <!-- Couleurs de base -->
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
 
-    <!-- Primary colors for kids -->
-    <color name="primary">#4CAF50</color>
-    <color name="primary_dark">#388E3C</color>
-    <color name="accent">#FF6B35</color>
+    <!-- ════════════════════════════════════════════════════════════════════
+         COULEURS PRINCIPALES - Thème joyeux et moderne
+         ════════════════════════════════════════════════════════════════════ -->
 
-    <!-- Background colors -->
-    <color name="background_light">#FFF9F0</color>
+    <!-- Couleur principale - Bleu ciel joyeux -->
+    <color name="primary">#5B9BD5</color>
+    <color name="primary_dark">#4A89C2</color>
+    <color name="primary_light">#A8D1F0</color>
+
+    <!-- Couleur d'accent - Orange chaleureux -->
+    <color name="accent">#FF9F43</color>
+    <color name="accent_light">#FECA57</color>
+
+    <!-- ════════════════════════════════════════════════════════════════════
+         COULEURS D'ARRIÈRE-PLAN - Fond doux et apaisant
+         ════════════════════════════════════════════════════════════════════ -->
+
+    <!-- Fond principal - Blanc cassé chaleureux -->
+    <color name="background_light">#FFF8F0</color>
+    <color name="background_cream">#FFF5E6</color>
+
+    <!-- Fond des cartes - Blanc pur avec légère teinte -->
     <color name="card_background">#FFFFFF</color>
+    <color name="card_background_tinted">#FFF9F5</color>
 
-    <!-- Button colors -->
-    <color name="button_arabic">#9B59B6</color>
-    <color name="button_french">#3498DB</color>
+    <!-- ════════════════════════════════════════════════════════════════════
+         COULEURS DES BOUTONS - Vives et attrayantes
+         ════════════════════════════════════════════════════════════════════ -->
 
-    <!-- Text colors -->
-    <color name="text_primary">#212121</color>
-    <color name="text_secondary">#757575</color>
+    <!-- Bouton Alphabet Arabe - Violet ludique -->
+    <color name="button_arabic">#A55EEA</color>
+    <color name="button_arabic_dark">#8854D0</color>
+    <color name="button_arabic_gradient_start">#A55EEA</color>
+    <color name="button_arabic_gradient_end">#8854D0</color>
 
-    <!-- Drawing colors -->
-    <color name="drawing_stroke">#FF6B35</color>
+    <!-- Bouton Alphabet Français - Bleu océan -->
+    <color name="button_french">#54A0FF</color>
+    <color name="button_french_dark">#2E86DE</color>
+    <color name="button_french_gradient_start">#54A0FF</color>
+    <color name="button_french_gradient_end">#2E86DE</color>
+
+    <!-- Boutons d'action -->
+    <color name="button_success">#26DE81</color>
+    <color name="button_success_dark">#20BF6B</color>
+    <color name="button_warning">#FD9644</color>
+    <color name="button_danger">#FC5C65</color>
+
+    <!-- ════════════════════════════════════════════════════════════════════
+         COULEURS DU TEXTE - Lisible et contrasté
+         ════════════════════════════════════════════════════════════════════ -->
+
+    <!-- Texte principal - Gris foncé doux (pas noir pur) -->
+    <color name="text_primary">#2D3436</color>
+
+    <!-- Texte secondaire - Gris moyen -->
+    <color name="text_secondary">#636E72</color>
+
+    <!-- Texte sur fond coloré -->
+    <color name="text_on_primary">#FFFFFF</color>
+    <color name="text_on_accent">#FFFFFF</color>
+
+    <!-- ════════════════════════════════════════════════════════════════════
+         COULEURS DE DESSIN - Pour le traçage des lettres
+         ════════════════════════════════════════════════════════════════════ -->
+
+    <!-- Trait de dessin - Orange vif -->
+    <color name="drawing_stroke">#FF6B6B</color>
+    <color name="drawing_stroke_alt">#48DBFB</color>
+
+    <!-- Affichage de la lettre - Bleu marine doux -->
     <color name="letter_display">#2C3E50</color>
+    <color name="letter_display_light">#576574</color>
+
+    <!-- ════════════════════════════════════════════════════════════════════
+         PALETTE ARC-EN-CIEL - Pour les éléments décoratifs
+         ════════════════════════════════════════════════════════════════════ -->
+
+    <color name="rainbow_red">#FF6B6B</color>
+    <color name="rainbow_orange">#FFA502</color>
+    <color name="rainbow_yellow">#FECA57</color>
+    <color name="rainbow_green">#26DE81</color>
+    <color name="rainbow_blue">#54A0FF</color>
+    <color name="rainbow_purple">#A55EEA</color>
+    <color name="rainbow_pink">#FF9FF3</color>
+
+    <!-- ════════════════════════════════════════════════════════════════════
+         COULEURS D'ÉTAT - Feedback visuel
+         ════════════════════════════════════════════════════════════════════ -->
+
+    <color name="success">#26DE81</color>
+    <color name="error">#FC5C65</color>
+    <color name="info">#54A0FF</color>
+    <color name="warning">#FECA57</color>
+
+    <!-- ════════════════════════════════════════════════════════════════════
+         COULEURS DE TOOLBAR - Barre d'outils moderne
+         ════════════════════════════════════════════════════════════════════ -->
+
+    <color name="toolbar_background">#5B9BD5</color>
+    <color name="toolbar_text">#FFFFFF</color>
+
+    <!-- Ombres et overlays -->
+    <color name="shadow">#1A000000</color>
+    <color name="overlay_light">#33FFFFFF</color>
+    <color name="ripple_light">#20FFFFFF</color>
 </resources>

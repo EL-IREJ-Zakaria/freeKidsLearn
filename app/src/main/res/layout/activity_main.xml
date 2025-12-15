@@ -1,106 +1,199 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<?xml version="1.0" encoding="utf-8"?><!-- ========================================================================
+     ACTIVITY_MAIN.XML - Écran d'accueil moderne pour enfants
+     ========================================================================
+     Design inspiré des meilleures applications éducatives pour enfants.
+     
+     Caractéristiques:
+     - Grandes cartes colorées faciles à toucher
+     - Emojis et icônes amusants
+     - Couleurs vives et joyeuses
+     - Coins très arrondis pour un look doux
+     ======================================================================== -->
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:gravity="center"
     android:background="@color/background_light"
-    android:padding="@dimen/spacing_large"
+    android:fillViewport="true"
     tools:context=".MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/welcome_title"
-        android:textSize="@dimen/text_size_xxlarge"
-        android:textStyle="bold"
-        android:textColor="@color/primary"
-        android:layout_marginBottom="@dimen/spacing_xlarge" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/choose_language"
-        android:textSize="@dimen/text_size_large"
-        android:textColor="@color/text_primary"
-        android:layout_marginBottom="@dimen/spacing_large" />
-
-    <com.google.android.material.card.MaterialCardView
-        android:id="@+id/cardArabic"
+    <LinearLayout
+        android:id="@+id/main"
         android:layout_width="match_parent"
-        android:layout_height="@dimen/button_height_large"
-        android:layout_marginBottom="@dimen/spacing_medium"
-        app:cardCornerRadius="@dimen/card_corner_radius"
-        app:cardElevation="@dimen/card_elevation"
-        app:cardBackgroundColor="@color/button_arabic"
-        android:clickable="true"
-        android:focusable="true">
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:padding="@dimen/spacing_large">
 
-        <LinearLayout
+        <!-- ════════════════════════════════════════════════════════════════
+             SECTION 1: En-tête avec emoji et titre de bienvenue
+             ════════════════════════════════════════════════════════════════ -->
+
+        <!-- Emoji de bienvenue animé -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="📚"
+            android:textSize="@dimen/home_emoji_size"
+            android:layout_marginTop="@dimen/spacing_xlarge"
+            android:layout_marginBottom="@dimen/spacing_medium" />
+
+        <!-- Titre principal -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/welcome_title"
+            android:textSize="@dimen/text_size_xlarge"
+            android:textStyle="bold"
+            android:textColor="@color/text_primary"
+            android:gravity="center" />
+
+        <!-- Sous-titre -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/choose_language"
+            android:textSize="@dimen/text_size_medium"
+            android:textColor="@color/text_secondary"
+            android:layout_marginTop="@dimen/spacing_small"
+            android:layout_marginBottom="@dimen/spacing_xlarge" />
+
+        <!-- ════════════════════════════════════════════════════════════════
+             SECTION 2: Carte Alphabet Arabe - Design ludique violet
+             ════════════════════════════════════════════════════════════════ -->
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/cardArabic"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="horizontal"
-            android:gravity="center"
-            android:padding="@dimen/spacing_medium">
+            android:layout_height="@dimen/home_card_height"
+            android:layout_marginBottom="@dimen/home_card_spacing"
+            app:cardCornerRadius="@dimen/card_corner_radius_large"
+            app:cardElevation="@dimen/card_elevation"
+            app:cardBackgroundColor="@color/button_arabic"
+            app:rippleColor="@color/ripple_light"
+            android:clickable="true"
+            android:focusable="true">
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="ع ب ج"
-                android:textSize="@dimen/text_size_xlarge"
-                android:textStyle="bold"
-                android:textColor="@color/white"
-                android:layout_marginEnd="@dimen/spacing_medium" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:paddingHorizontal="@dimen/spacing_large">
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/arabic_alphabet"
-                android:textSize="@dimen/text_size_large"
-                android:textStyle="bold"
-                android:textColor="@color/white" />
+                <!-- Icône/Emoji à gauche -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="🕌"
+                    android:textSize="@dimen/text_size_huge"
+                    android:layout_marginEnd="@dimen/spacing_medium" />
 
-        </LinearLayout>
-    </com.google.android.material.card.MaterialCardView>
+                <!-- Texte à droite -->
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
 
-    <com.google.android.material.card.MaterialCardView
-        android:id="@+id/cardFrench"
-        android:layout_width="match_parent"
-        android:layout_height="@dimen/button_height_large"
-        app:cardCornerRadius="@dimen/card_corner_radius"
-        app:cardElevation="@dimen/card_elevation"
-        app:cardBackgroundColor="@color/button_french"
-        android:clickable="true"
-        android:focusable="true">
+                    <!-- Lettres arabes décoratives -->
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="أ ب ت ث"
+                        android:textSize="@dimen/text_size_xlarge"
+                        android:textStyle="bold"
+                        android:textColor="@color/white" />
 
-        <LinearLayout
+                    <!-- Nom de l'alphabet -->
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/arabic_alphabet"
+                        android:textSize="@dimen/text_size_large"
+                        android:textColor="@color/overlay_light"
+                        android:layout_marginTop="@dimen/spacing_tiny" />
+
+                </LinearLayout>
+
+                <!-- Flèche indicatrice -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="▶"
+                    android:textSize="@dimen/text_size_large"
+                    android:textColor="@color/overlay_light" />
+
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <!-- ════════════════════════════════════════════════════════════════
+             SECTION 3: Carte Alphabet Français - Design ludique bleu
+             ════════════════════════════════════════════════════════════════ -->
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/cardFrench"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="horizontal"
-            android:gravity="center"
-            android:padding="@dimen/spacing_medium">
+            android:layout_height="@dimen/home_card_height"
+            android:layout_marginBottom="@dimen/home_card_spacing"
+            app:cardCornerRadius="@dimen/card_corner_radius_large"
+            app:cardElevation="@dimen/card_elevation"
+            app:cardBackgroundColor="@color/button_french"
+            app:rippleColor="@color/ripple_light"
+            android:clickable="true"
+            android:focusable="true">
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="ABC"
-                android:textSize="@dimen/text_size_xlarge"
-                android:textStyle="bold"
-                android:textColor="@color/white"
-                android:layout_marginEnd="@dimen/spacing_medium" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:paddingHorizontal="@dimen/spacing_large">
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/french_alphabet"
-                android:textSize="@dimen/text_size_large"
-                android:textStyle="bold"
-                android:textColor="@color/white" />
+                <!-- Icône/Emoji à gauche -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="🗼"
+                    android:textSize="@dimen/text_size_huge"
+                    android:layout_marginEnd="@dimen/spacing_medium" />
 
-        </LinearLayout>
-    </com.google.android.material.card.MaterialCardView>
+                <!-- Texte à droite -->
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
 
-</LinearLayout>
+                    <!-- Lettres françaises décoratives -->
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="A B C D"
+                        android:textSize="@dimen/text_size_xlarge"
+                        android:textStyle="bold"
+                        android:textColor="@color/white" />
+
+                    <!-- Nom de l'alphabet -->
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/french_alphabet"
+                        android:textSize="@dimen/text_size_large"
+                        android:textColor="@color/overlay_light"
+                        android:layout_marginTop="@dimen/spacing_tiny" />
+
+                </LinearLayout>
+
+                <!-- Flèche indicatrice -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="▶"
+                    android:textSize="@dimen/text_size_large"
+                    android:textColor="@color/overlay_light" />
+
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+    </LinearLayout>
+</ScrollView>

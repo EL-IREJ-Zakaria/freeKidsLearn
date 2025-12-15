@@ -1,9 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:tools="http://schemas.android.com/tools">
-    <!-- Base application theme. -->
+    <!-- ====================================================================
+         THEMES.XML - Thème moderne pour application enfants
+         ====================================================================
+         Thème Material 3 personnalisé avec couleurs vives et joyeuses.
+         ==================================================================== -->
+
+    <!-- Thème de base -->
     <style name="Base.Theme.FreeKidsLearn" parent="Theme.Material3.DayNight.NoActionBar">
-        <!-- Customize your light theme here. -->
-        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+
+        <!-- Couleurs primaires - Bleu ciel joyeux -->
+        <item name="colorPrimary">@color/primary</item>
+        <item name="colorPrimaryDark">@color/primary_dark</item>
+        <item name="colorPrimaryContainer">@color/primary_light</item>
+        <item name="colorOnPrimary">@color/white</item>
+
+        <!-- Couleurs secondaires/accent - Orange chaleureux -->
+        <item name="colorSecondary">@color/accent</item>
+        <item name="colorSecondaryContainer">@color/accent_light</item>
+        <item name="colorOnSecondary">@color/white</item>
+
+        <!-- Couleurs de surface et fond -->
+        <item name="colorSurface">@color/card_background</item>
+        <item name="colorOnSurface">@color/text_primary</item>
+        <item name="android:colorBackground">@color/background_light</item>
+        <item name="colorOnBackground">@color/text_primary</item>
+
+        <!-- Couleurs d'erreur -->
+        <item name="colorError">@color/error</item>
+        <item name="colorOnError">@color/white</item>
+
+        <!-- Barre de statut -->
+        <item name="android:statusBarColor">@color/primary_dark</item>
+        <item name="android:navigationBarColor">@color/background_light</item>
+
+        <!-- Forme des composants - Très arrondis -->
+        <item name="shapeAppearanceSmallComponent">@style/ShapeAppearance.Kids.Small</item>
+        <item name="shapeAppearanceMediumComponent">@style/ShapeAppearance.Kids.Medium</item>
+        <item name="shapeAppearanceLargeComponent">@style/ShapeAppearance.Kids.Large</item>
+
     </style>
 
+    <!-- Thème principal de l'application -->
     <style name="Theme.FreeKidsLearn" parent="Base.Theme.FreeKidsLearn" />
+
+    <!-- ════════════════════════════════════════════════════════════════════
+         STYLES DE FORME - Coins très arrondis pour look moderne
+         ════════════════════════════════════════════════════════════════════ -->
+
+    <style name="ShapeAppearance.Kids.Small" parent="ShapeAppearance.Material3.SmallComponent">
+        <item name="cornerSize">12dp</item>
+    </style>
+
+    <style name="ShapeAppearance.Kids.Medium" parent="ShapeAppearance.Material3.MediumComponent">
+        <item name="cornerSize">20dp</item>
+    </style>
+
+    <style name="ShapeAppearance.Kids.Large" parent="ShapeAppearance.Material3.LargeComponent">
+        <item name="cornerSize">28dp</item>
+    </style>
+
+    <!-- ════════════════════════════════════════════════════════════════════
+         STYLES DE BOUTONS - Grands et colorés pour les enfants
+         ════════════════════════════════════════════════════════════════════ -->
+
+    <style name="Widget.Kids.Button" parent="Widget.Material3.Button">
+        <item name="cornerRadius">24dp</item>
+        <item name="android:minHeight">56dp</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="Widget.Kids.Button.Outlined" parent="Widget.Material3.Button.OutlinedButton">
+        <item name="cornerRadius">24dp</item>
+        <item name="android:minHeight">56dp</item>
+        <item name="strokeWidth">2dp</item>
+    </style>
+
+    <!-- ════════════════════════════════════════════════════════════════════
+         STYLES DE CARTES - Élévation et coins arrondis
+         ════════════════════════════════════════════════════════════════════ -->
+
+    <style name="Widget.Kids.Card" parent="Widget.Material3.CardView.Elevated">
+        <item name="cardCornerRadius">20dp</item>
+        <item name="cardElevation">6dp</item>
+    </style>
+
 </resources>

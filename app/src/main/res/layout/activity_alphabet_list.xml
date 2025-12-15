@@ -1,4 +1,12 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?><!-- ========================================================================
+     ACTIVITY_ALPHABET_LIST.XML - Liste des lettres moderne
+     ========================================================================
+     Affiche toutes les lettres dans une grille défilante avec:
+     - Une toolbar colorée avec titre et bouton retour
+     - Une grille de cartes de lettres (RecyclerView)
+     
+     Design moderne avec fond doux et cartes élégantes.
+     ======================================================================== -->
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
@@ -6,21 +14,66 @@
     android:orientation="vertical"
     android:background="@color/background_light">
 
-    <com.google.android.material.appbar.MaterialToolbar
-        android:id="@+id/toolbar"
+    <!-- ════════════════════════════════════════════════════════════════
+         SECTION 1: Toolbar moderne avec coins arrondis en bas
+         ════════════════════════════════════════════════════════════════ -->
+    <com.google.android.material.card.MaterialCardView
         android:layout_width="match_parent"
-        android:layout_height="?attr/actionBarSize"
-        android:background="@color/primary"
-        android:elevation="4dp"
-        app:titleTextColor="@color/white"
-        app:navigationIcon="?attr/homeAsUpIndicator"
-        app:title="@string/letters_title" />
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="0dp"
+        app:cardElevation="@dimen/toolbar_elevation"
+        app:cardBackgroundColor="@color/primary">
 
+        <com.google.android.material.appbar.MaterialToolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/toolbar_height"
+            android:background="@android:color/transparent"
+            app:titleTextColor="@color/white"
+            app:titleTextAppearance="@style/TextAppearance.Material3.TitleLarge"
+            app:navigationIconTint="@color/white"
+            app:navigationIcon="@drawable/ic_arrow_back"
+            app:title="@string/letters_title" />
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <!-- ════════════════════════════════════════════════════════════════
+         SECTION 2: En-tête avec emoji et compteur de lettres
+         ════════════════════════════════════════════════════════════════ -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:padding="@dimen/spacing_medium"
+        android:background="@color/background_cream">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="🔤"
+            android:textSize="@dimen/text_size_xlarge"
+            android:layout_marginEnd="@dimen/spacing_medium" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Choisis une lettre !"
+            android:textSize="@dimen/text_size_medium"
+            android:textStyle="bold"
+            android:textColor="@color/text_primary" />
+
+    </LinearLayout>
+
+    <!-- ════════════════════════════════════════════════════════════════
+         SECTION 3: RecyclerView - Grille de lettres
+         ════════════════════════════════════════════════════════════════ -->
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recyclerViewLetters"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:padding="@dimen/spacing_small"
-        android:clipToPadding="false" />
+        android:clipToPadding="false"
+        android:overScrollMode="never" />
 
 </LinearLayout>

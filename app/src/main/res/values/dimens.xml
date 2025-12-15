@@ -1,33 +1,130 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <!-- Spacing -->
+    <!-- ====================================================================
+         DIMENS.XML - Dimensions modernes adaptées aux enfants
+         ====================================================================
+         Design pensé pour les petits doigts et la lisibilité maximale.
+         
+         Principes:
+         - Grands boutons faciles à toucher (min 48dp, idéalement 56-72dp)
+         - Texte lisible (min 16sp pour le corps, 24sp+ pour les titres)
+         - Espacement généreux (éviter les éléments trop serrés)
+         - Coins très arrondis (aspect doux et amical)
+         ==================================================================== -->
+
+    <!-- ════════════════════════════════════════════════════════════════════
+         ESPACEMENTS - Marges et paddings généreux
+         ════════════════════════════════════════════════════════════════════ -->
+
+    <dimen name="spacing_tiny">4dp</dimen>
     <dimen name="spacing_small">8dp</dimen>
     <dimen name="spacing_medium">16dp</dimen>
     <dimen name="spacing_large">24dp</dimen>
     <dimen name="spacing_xlarge">32dp</dimen>
+    <dimen name="spacing_xxlarge">48dp</dimen>
 
-    <!-- Text sizes -->
+    <!-- ════════════════════════════════════════════════════════════════════
+         TAILLES DE TEXTE - Grande lisibilité pour enfants
+         ════════════════════════════════════════════════════════════════════ -->
+
+    <!-- Texte corps -->
+    <dimen name="text_size_tiny">12sp</dimen>
     <dimen name="text_size_small">14sp</dimen>
     <dimen name="text_size_medium">18sp</dimen>
     <dimen name="text_size_large">24sp</dimen>
+
+    <!-- Titres -->
     <dimen name="text_size_xlarge">32sp</dimen>
     <dimen name="text_size_xxlarge">48sp</dimen>
+    <dimen name="text_size_huge">64sp</dimen>
 
-    <!-- Letter display -->
-    <dimen name="letter_size_list">64sp</dimen>
-    <dimen name="letter_size_display">120sp</dimen>
+    <!-- ════════════════════════════════════════════════════════════════════
+         TAILLES DES LETTRES - Pour l'affichage et l'apprentissage
+         ════════════════════════════════════════════════════════════════════ -->
 
-    <!-- Button sizes -->
-    <dimen name="button_height">60dp</dimen>
-    <dimen name="button_height_large">80dp</dimen>
-    <dimen name="button_corner_radius">16dp</dimen>
+    <!-- Lettre dans la liste (grille) -->
+    <dimen name="letter_size_list">48sp</dimen>
 
-    <!-- Card -->
-    <dimen name="card_elevation">4dp</dimen>
-    <dimen name="card_corner_radius">12dp</dimen>
+    <!-- Grande lettre sur l'écran de traçage -->
+    <dimen name="letter_size_display">140sp</dimen>
 
-    <!-- Icons -->
-    <dimen name="icon_size_small">32dp</dimen>
-    <dimen name="icon_size_medium">48dp</dimen>
-    <dimen name="icon_size_large">64dp</dimen>
+    <!-- Emoji animal -->
+    <dimen name="animal_emoji_size">32sp</dimen>
+
+    <!-- ════════════════════════════════════════════════════════════════════
+         TAILLES DES BOUTONS - Grands et faciles à toucher
+         ════════════════════════════════════════════════════════════════════ -->
+
+    <!-- Bouton standard (minimum recommandé par Google: 48dp) -->
+    <dimen name="button_height">56dp</dimen>
+    <dimen name="button_height_large">72dp</dimen>
+    <dimen name="button_height_xlarge">100dp</dimen>
+
+    <!-- Padding interne des boutons -->
+    <dimen name="button_padding_horizontal">24dp</dimen>
+    <dimen name="button_padding_vertical">16dp</dimen>
+
+    <!-- Coins arrondis des boutons - Très arrondis pour look moderne -->
+    <dimen name="button_corner_radius">24dp</dimen>
+    <dimen name="button_corner_radius_large">32dp</dimen>
+    <dimen name="button_corner_radius_pill">100dp</dimen>
+
+    <!-- ════════════════════════════════════════════════════════════════════
+         CARTES - Éléments conteneurs modernes
+         ════════════════════════════════════════════════════════════════════ -->
+
+    <!-- Élévation (ombre) -->
+    <dimen name="card_elevation">6dp</dimen>
+    <dimen name="card_elevation_high">12dp</dimen>
+
+    <!-- Coins arrondis des cartes - Style moderne -->
+    <dimen name="card_corner_radius">20dp</dimen>
+    <dimen name="card_corner_radius_large">28dp</dimen>
+
+    <!-- Padding interne des cartes -->
+    <dimen name="card_padding">16dp</dimen>
+    <dimen name="card_padding_large">24dp</dimen>
+
+    <!-- Marge entre cartes -->
+    <dimen name="card_margin">10dp</dimen>
+
+    <!-- ════════════════════════════════════════════════════════════════════
+         ICÔNES - Tailles adaptées aux enfants
+         ════════════════════════════════════════════════════════════════════ -->
+
+    <dimen name="icon_size_small">24dp</dimen>
+    <dimen name="icon_size_medium">36dp</dimen>
+    <dimen name="icon_size_large">56dp</dimen>
+    <dimen name="icon_size_xlarge">72dp</dimen>
+    <dimen name="icon_size_huge">96dp</dimen>
+
+    <!-- ════════════════════════════════════════════════════════════════════
+         TOOLBAR - Barre d'outils
+         ════════════════════════════════════════════════════════════════════ -->
+
+    <dimen name="toolbar_height">64dp</dimen>
+    <dimen name="toolbar_title_size">22sp</dimen>
+    <dimen name="toolbar_elevation">8dp</dimen>
+
+    <!-- ════════════════════════════════════════════════════════════════════
+         ZONE DE DESSIN - Canvas pour tracer les lettres
+         ════════════════════════════════════════════════════════════════════ -->
+
+    <dimen name="drawing_stroke_width">24dp</dimen>
+    <dimen name="drawing_min_height">200dp</dimen>
+
+    <!-- ════════════════════════════════════════════════════════════════════
+         ÉLÉMENTS DE L'ÉCRAN D'ACCUEIL
+         ════════════════════════════════════════════════════════════════════ -->
+
+    <dimen name="home_card_height">140dp</dimen>
+    <dimen name="home_card_spacing">16dp</dimen>
+    <dimen name="home_emoji_size">56sp</dimen>
+
+    <!-- ════════════════════════════════════════════════════════════════════
+         ÉLÉMENTS DE LA LISTE DES LETTRES
+         ════════════════════════════════════════════════════════════════════ -->
+
+    <dimen name="letter_card_min_height">100dp</dimen>
+    <dimen name="letter_card_padding">12dp</dimen>
 </resources>

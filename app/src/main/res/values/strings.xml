@@ -1,23 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <!-- ====================================================================
+         STRINGS.XML - Textes de l'application en français
+         ====================================================================
+         Textes adaptés aux enfants: simples, encourageants et amusants.
+         ==================================================================== -->
+
     <string name="app_name">Kids Learning</string>
 
-    <!-- Home screen -->
-    <string name="welcome_title">Bienvenue!</string>
-    <string name="choose_language">Choisir une langue</string>
+    <!-- ════════════════════════════════════════════════════════════════════
+         ÉCRAN D'ACCUEIL - Textes de bienvenue
+         ════════════════════════════════════════════════════════════════════ -->
+    <string name="welcome_title">Salut petit génie ! 🌟</string>
+    <string name="choose_language">Quel alphabet veux-tu apprendre ?</string>
     <string name="arabic_alphabet">Alphabet Arabe</string>
     <string name="french_alphabet">Alphabet Français</string>
 
-    <!-- Alphabet list -->
-    <string name="letters_title">Lettres</string>
+    <!-- ════════════════════════════════════════════════════════════════════
+         LISTE DES LETTRES
+         ════════════════════════════════════════════════════════════════════ -->
+    <string name="letters_title">Les Lettres</string>
+    <string name="choose_letter">Choisis une lettre !</string>
 
-    <!-- Letter tracing -->
-    <string name="trace_letter">Tracer la lettre</string>
+    <!-- ════════════════════════════════════════════════════════════════════
+         ÉCRAN DE TRAÇAGE
+         ════════════════════════════════════════════════════════════════════ -->
+    <string name="trace_letter">Tracer la lettre ✏️</string>
     <string name="clear_button">Effacer</string>
-    <string name="repeat_sound">Répéter</string>
+    <string name="repeat_sound">🔊 Écouter</string>
     <string name="next_letter">Suivant</string>
     <string name="previous_letter">Précédent</string>
+    <string name="draw_here">Dessine ici avec ton doigt !</string>
 
-    <!-- Messages -->
-    <string name="great_job">Bravo!</string>
-    <string name="try_again">Essayer encore</string>
+    <!-- ════════════════════════════════════════════════════════════════════
+         MESSAGES D'ENCOURAGEMENT
+         ════════════════════════════════════════════════════════════════════ -->
+    <string name="great_job">🎉 Super travail ! Tu es génial !</string>
+    <string name="try_again">Encore une fois ! Tu peux le faire ! 💪</string>
+    <string name="well_done">Bravo ! Continue comme ça ! ⭐</string>
+    <string name="keep_going">Tu y es presque ! 🚀</string>
+
+    <!-- ════════════════════════════════════════════════════════════════════
+         ACCESSIBILITÉ
+         ════════════════════════════════════════════════════════════════════ -->
+    <string name="back_button_description">Retour</string>
+    <string name="sound_button_description">Écouter la prononciation</string>
+    <string name="clear_button_description">Effacer le dessin</string>
+
 </resources>
