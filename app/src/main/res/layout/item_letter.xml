@@ -1,92 +1,56 @@
 <?xml version="1.0" encoding="utf-8"?><!-- ========================================================================
-     ITEM_LETTER.XML - Carte de lettre moderne pour la grille
+     ITEM_LETTER.XML - Carte de lettre Candy Fun (Simple)
      ========================================================================
-     Chaque lettre est affichée dans une belle carte avec:
-     - La lettre en grand et coloré
-     - Le nom de la lettre
-     - L'animal associé avec son emoji
-     
-     Design pensé pour être attrayant et facile à toucher pour les enfants.
+     Design épuré: juste la lettre dans un beau cercle coloré
      ======================================================================== -->
 <com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:layout_margin="@dimen/card_margin"
-    app:cardCornerRadius="@dimen/card_corner_radius"
-    app:cardElevation="@dimen/card_elevation"
-    app:cardBackgroundColor="@color/card_background"
+    android:layout_margin="6dp"
+    app:cardCornerRadius="24dp"
+    app:cardElevation="6dp"
+    app:cardBackgroundColor="@color/white"
     app:strokeWidth="0dp"
-    app:rippleColor="@color/primary_light"
+    app:rippleColor="@color/ripple_colored"
     android:clickable="true"
     android:focusable="true">
 
-    <!-- ════════════════════════════════════════════════════════════════
-         Contenu de la carte - Layout vertical centré
-         ════════════════════════════════════════════════════════════════ -->
-    <LinearLayout
+    <!-- Contenu de la carte -->
+    <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:padding="@dimen/letter_card_padding"
-        android:gravity="center"
-        android:minHeight="@dimen/letter_card_min_height">
+        android:padding="12dp"
+        android:minHeight="90dp">
 
-        <!-- ────────────────────────────────────────────────────────────────
-             Ligne 1: La lettre en grand format avec cercle coloré
-             ──────────────────────────────────────────────────────────────── -->
+        <!-- Cercle coloré avec la lettre -->
         <FrameLayout
-            android:layout_width="@dimen/icon_size_xlarge"
-            android:layout_height="@dimen/icon_size_xlarge"
-            android:layout_marginBottom="@dimen/spacing_small">
+            android:id="@+id/letterCircle"
+            android:layout_width="72dp"
+            android:layout_height="72dp"
+            android:layout_gravity="center">
 
-            <!-- Cercle de fond coloré avec dégradé arc-en-ciel -->
+            <!-- Fond cercle coloré -->
             <View
+                android:id="@+id/circleBackground"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:background="@drawable/circle_letter_colorful" />
+                android:background="@drawable/circle_letter_pink" />
 
-            <!-- La lettre centrée -->
+            <!-- La lettre -->
             <TextView
                 android:id="@+id/textLetter"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:gravity="center"
                 android:text="A"
-                android:textSize="@dimen/letter_size_list"
+                android:textSize="36sp"
                 android:textStyle="bold"
-                android:textColor="@color/white" />
+                android:textColor="@color/white"
+                android:fontFamily="sans-serif-medium" />
 
         </FrameLayout>
 
-        <!-- ────────────────────────────────────────────────────────────────
-             Ligne 2: Nom de la lettre
-             ──────────────────────────────────────────────────────────────── -->
-        <TextView
-            android:id="@+id/textLetterName"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="A"
-            android:textSize="@dimen/text_size_medium"
-            android:textStyle="bold"
-            android:textColor="@color/text_primary"
-            android:gravity="center" />
-
-        <!-- ────────────────────────────────────────────────────────────────
-             Ligne 3: Animal associé avec emoji
-             ──────────────────────────────────────────────────────────────── -->
-        <TextView
-            android:id="@+id/textAnimal"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/spacing_tiny"
-            android:text="🐊 Alligator"
-            android:textSize="@dimen/text_size_small"
-            android:textColor="@color/text_secondary"
-            android:gravity="center"
-            android:maxLines="2"
-            android:ellipsize="end" />
-
-    </LinearLayout>
+    </FrameLayout>
 
 </com.google.android.material.card.MaterialCardView>

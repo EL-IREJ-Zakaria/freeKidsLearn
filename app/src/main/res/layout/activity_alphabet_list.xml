@@ -1,77 +1,126 @@
 <?xml version="1.0" encoding="utf-8"?><!-- ========================================================================
-     ACTIVITY_ALPHABET_LIST.XML - Liste des lettres moderne
+     ACTIVITY_ALPHABET_LIST.XML - Liste des lettres Candy Fun
      ========================================================================
-     Affiche toutes les lettres dans une grille défilante avec:
-     - Une toolbar colorée avec titre et bouton retour
-     - Une grille de cartes de lettres (RecyclerView)
-     
-     Design moderne avec fond doux et cartes élégantes.
+     Affiche toutes les lettres dans une grille colorée avec:
+     - Header avec dégradé magique
+     - Message encourageant avec emoji
+     - Grille de cartes arc-en-ciel
      ======================================================================== -->
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="@color/background_light">
+    android:background="@drawable/bg_gradient_main">
 
     <!-- ════════════════════════════════════════════════════════════════
-         SECTION 1: Toolbar moderne avec coins arrondis en bas
+         SECTION 1: Header avec dégradé et coins arrondis
          ════════════════════════════════════════════════════════════════ -->
     <com.google.android.material.card.MaterialCardView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:cardCornerRadius="0dp"
-        app:cardElevation="@dimen/toolbar_elevation"
-        app:cardBackgroundColor="@color/primary">
+        app:cardElevation="8dp"
+        app:strokeWidth="0dp">
 
-        <com.google.android.material.appbar.MaterialToolbar
-            android:id="@+id/toolbar"
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="@dimen/toolbar_height"
-            android:background="@android:color/transparent"
-            app:titleTextColor="@color/white"
-            app:titleTextAppearance="@style/TextAppearance.Material3.TitleLarge"
-            app:navigationIconTint="@color/white"
-            app:navigationIcon="@drawable/ic_arrow_back"
-            app:title="@string/letters_title" />
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_toolbar_gradient"
+            android:orientation="vertical">
+
+            <com.google.android.material.appbar.MaterialToolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/toolbar_height"
+                android:background="@android:color/transparent"
+                app:titleTextColor="@color/white"
+                app:titleCentered="true"
+                app:titleTextAppearance="@style/TextAppearance.Material3.TitleLarge"
+                app:navigationIconTint="@color/white"
+                app:navigationIcon="@drawable/ic_arrow_back"
+                app:title="@string/letters_title" />
+
+            <!-- Coins arrondis en bas du header -->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="24dp"
+                android:background="@drawable/bg_header_bottom_curve" />
+
+        </LinearLayout>
 
     </com.google.android.material.card.MaterialCardView>
 
     <!-- ════════════════════════════════════════════════════════════════
-         SECTION 2: En-tête avec emoji et compteur de lettres
+         SECTION 2: Message encourageant avec emoji
          ════════════════════════════════════════════════════════════════ -->
-    <LinearLayout
+    <com.google.android.material.card.MaterialCardView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:gravity="center_vertical"
-        android:padding="@dimen/spacing_medium"
-        android:background="@color/background_cream">
+        android:layout_marginHorizontal="@dimen/spacing_medium"
+        android:layout_marginTop="@dimen/spacing_medium"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="4dp"
+        app:cardBackgroundColor="@color/white">
 
-        <TextView
-            android:layout_width="wrap_content"
+        <LinearLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="🔤"
-            android:textSize="@dimen/text_size_xlarge"
-            android:layout_marginEnd="@dimen/spacing_medium" />
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:padding="@dimen/spacing_medium">
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Choisis une lettre !"
-            android:textSize="@dimen/text_size_medium"
-            android:textStyle="bold"
-            android:textColor="@color/text_primary" />
+            <!-- Emoji main qui pointe -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="\uD83D\uDC47"
+                android:textSize="32sp"
+                android:layout_marginEnd="@dimen/spacing_medium" />
 
-    </LinearLayout>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/choose_letter"
+                    android:textSize="@dimen/text_size_medium"
+                    android:textStyle="bold"
+                    android:textColor="@color/text_primary" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/tap_to_learn"
+                    android:textSize="@dimen/text_size_small"
+                    android:textColor="@color/text_secondary"
+                    android:layout_marginTop="2dp" />
+
+            </LinearLayout>
+
+            <!-- Étoile scintillante -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="\u2728"
+                android:textSize="24sp" />
+
+        </LinearLayout>
+
+    </com.google.android.material.card.MaterialCardView>
 
     <!-- ════════════════════════════════════════════════════════════════
-         SECTION 3: RecyclerView - Grille de lettres
+         SECTION 3: RecyclerView - Grille de lettres colorées
          ════════════════════════════════════════════════════════════════ -->
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recyclerViewLetters"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/spacing_small"
         android:padding="@dimen/spacing_small"
         android:clipToPadding="false"
         android:overScrollMode="never" />

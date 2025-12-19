@@ -1,12 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <!-- ====================================================================
-         COLORS.XML - Palette de couleurs moderne pour enfants
+         COLORS.XML - Palette CANDY FUN pour enfants
          ====================================================================
-         Design inspiré des applications éducatives modernes comme Khan Kids,
-         Duolingo ABC, et Endless Alphabet.
-         
-         Palette pastel douce mais vivante, adaptée aux yeux des enfants.
+         Nouveau design inspiré des bonbons, arcs-en-ciel et univers magique!
+         Couleurs vibrantes et joyeuses pour captiver les enfants.
          ==================================================================== -->
 
     <!-- Couleurs de base -->
@@ -14,108 +12,149 @@
     <color name="white">#FFFFFFFF</color>
 
     <!-- ════════════════════════════════════════════════════════════════════
-         COULEURS PRINCIPALES - Thème joyeux et moderne
+         COULEURS PRINCIPALES - Thème Candy Magic
          ════════════════════════════════════════════════════════════════════ -->
 
-    <!-- Couleur principale - Bleu ciel joyeux -->
-    <color name="primary">#5B9BD5</color>
-    <color name="primary_dark">#4A89C2</color>
-    <color name="primary_light">#A8D1F0</color>
+    <!-- Couleur principale - Rose bonbon pétillant -->
+    <color name="primary">#FF6B9D</color>
+    <color name="primary_dark">#E85A8C</color>
+    <color name="primary_light">#FFB3C9</color>
 
-    <!-- Couleur d'accent - Orange chaleureux -->
-    <color name="accent">#FF9F43</color>
-    <color name="accent_light">#FECA57</color>
+    <!-- Couleur d'accent - Cyan électrique -->
+    <color name="accent">#00D4AA</color>
+    <color name="accent_light">#5DFFC5</color>
+    <color name="accent_dark">#00B894</color>
 
     <!-- ════════════════════════════════════════════════════════════════════
-         COULEURS D'ARRIÈRE-PLAN - Fond doux et apaisant
+         COULEURS D'ARRIÈRE-PLAN - Univers doux et magique
          ════════════════════════════════════════════════════════════════════ -->
 
-    <!-- Fond principal - Blanc cassé chaleureux -->
-    <color name="background_light">#FFF8F0</color>
-    <color name="background_cream">#FFF5E6</color>
+    <!-- Fond principal - Lavande très pâle -->
+    <color name="background_light">#F8F5FF</color>
+    <color name="background_cream">#FFF0F5</color>
 
-    <!-- Fond des cartes - Blanc pur avec légère teinte -->
+    <!-- Fond dégradé magique -->
+    <color name="background_gradient_start">#E8F4FF</color>
+    <color name="background_gradient_end">#FFF0F8</color>
+
+    <!-- Fond des cartes - Blanc brillant -->
     <color name="card_background">#FFFFFF</color>
-    <color name="card_background_tinted">#FFF9F5</color>
+    <color name="card_background_tinted">#FFF8FC</color>
 
     <!-- ════════════════════════════════════════════════════════════════════
-         COULEURS DES BOUTONS - Vives et attrayantes
+         COULEURS DES CARTES D'ALPHABET - Super vibrantes!
          ════════════════════════════════════════════════════════════════════ -->
 
-    <!-- Bouton Alphabet Arabe - Violet ludique -->
-    <color name="button_arabic">#A55EEA</color>
-    <color name="button_arabic_dark">#8854D0</color>
-    <color name="button_arabic_gradient_start">#A55EEA</color>
-    <color name="button_arabic_gradient_end">#8854D0</color>
+    <!-- Carte Alphabet Arabe - Dégradé violet-rose magique -->
+    <color name="button_arabic">#9B59B6</color>
+    <color name="button_arabic_dark">#8E44AD</color>
+    <color name="button_arabic_gradient_start">#A855F7</color>
+    <color name="button_arabic_gradient_center">#D946EF</color>
+    <color name="button_arabic_gradient_end">#EC4899</color>
 
-    <!-- Bouton Alphabet Français - Bleu océan -->
-    <color name="button_french">#54A0FF</color>
-    <color name="button_french_dark">#2E86DE</color>
-    <color name="button_french_gradient_start">#54A0FF</color>
-    <color name="button_french_gradient_end">#2E86DE</color>
-
-    <!-- Boutons d'action -->
-    <color name="button_success">#26DE81</color>
-    <color name="button_success_dark">#20BF6B</color>
-    <color name="button_warning">#FD9644</color>
-    <color name="button_danger">#FC5C65</color>
+    <!-- Carte Alphabet Français - Dégradé bleu-cyan frais -->
+    <color name="button_french">#3B82F6</color>
+    <color name="button_french_dark">#2563EB</color>
+    <color name="button_french_gradient_start">#06B6D4</color>
+    <color name="button_french_gradient_center">#3B82F6</color>
+    <color name="button_french_gradient_end">#6366F1</color>
 
     <!-- ════════════════════════════════════════════════════════════════════
-         COULEURS DU TEXTE - Lisible et contrasté
+         BOUTONS D'ACTION - Colorés et fun
          ════════════════════════════════════════════════════════════════════ -->
 
-    <!-- Texte principal - Gris foncé doux (pas noir pur) -->
-    <color name="text_primary">#2D3436</color>
+    <color name="button_success">#10B981</color>
+    <color name="button_success_dark">#059669</color>
+    <color name="button_warning">#F59E0B</color>
+    <color name="button_danger">#EF4444</color>
+    <color name="button_clear">#F472B6</color>
+    <color name="button_nav">#8B5CF6</color>
 
-    <!-- Texte secondaire - Gris moyen -->
-    <color name="text_secondary">#636E72</color>
+    <!-- ════════════════════════════════════════════════════════════════════
+         COULEURS DU TEXTE - Lisible et moderne
+         ════════════════════════════════════════════════════════════════════ -->
+
+    <!-- Texte principal - Violet foncé doux -->
+    <color name="text_primary">#1E1B4B</color>
+
+    <!-- Texte secondaire - Gris violet -->
+    <color name="text_secondary">#6B7280</color>
+    <color name="text_hint">#9CA3AF</color>
 
     <!-- Texte sur fond coloré -->
     <color name="text_on_primary">#FFFFFF</color>
     <color name="text_on_accent">#FFFFFF</color>
 
     <!-- ════════════════════════════════════════════════════════════════════
-         COULEURS DE DESSIN - Pour le traçage des lettres
+         COULEURS DE DESSIN - Pour le traçage magique
          ════════════════════════════════════════════════════════════════════ -->
 
-    <!-- Trait de dessin - Orange vif -->
-    <color name="drawing_stroke">#FF6B6B</color>
-    <color name="drawing_stroke_alt">#48DBFB</color>
+    <!-- Trait de dessin - Arc-en-ciel -->
+    <color name="drawing_stroke">#FF6B9D</color>
+    <color name="drawing_stroke_alt">#00D4AA</color>
+    <color name="drawing_stroke_rainbow">#FFD93D</color>
 
-    <!-- Affichage de la lettre - Bleu marine doux -->
-    <color name="letter_display">#2C3E50</color>
-    <color name="letter_display_light">#576574</color>
+    <!-- Affichage de la lettre -->
+    <color name="letter_display">#4C1D95</color>
+    <color name="letter_display_light">#7C3AED</color>
+    <color name="letter_outline">#E879F9</color>
 
     <!-- ════════════════════════════════════════════════════════════════════
-         PALETTE ARC-EN-CIEL - Pour les éléments décoratifs
+         PALETTE ARC-EN-CIEL CANDY - Plus vibrante!
          ════════════════════════════════════════════════════════════════════ -->
 
     <color name="rainbow_red">#FF6B6B</color>
-    <color name="rainbow_orange">#FFA502</color>
-    <color name="rainbow_yellow">#FECA57</color>
-    <color name="rainbow_green">#26DE81</color>
-    <color name="rainbow_blue">#54A0FF</color>
-    <color name="rainbow_purple">#A55EEA</color>
-    <color name="rainbow_pink">#FF9FF3</color>
+    <color name="rainbow_coral">#FF8787</color>
+    <color name="rainbow_orange">#FF9F43</color>
+    <color name="rainbow_yellow">#FFD93D</color>
+    <color name="rainbow_lime">#A3E635</color>
+    <color name="rainbow_green">#34D399</color>
+    <color name="rainbow_teal">#2DD4BF</color>
+    <color name="rainbow_cyan">#22D3EE</color>
+    <color name="rainbow_blue">#60A5FA</color>
+    <color name="rainbow_indigo">#818CF8</color>
+    <color name="rainbow_purple">#A855F7</color>
+    <color name="rainbow_pink">#F472B6</color>
+    <color name="rainbow_rose">#FB7185</color>
+
+    <!-- Couleurs de lettres alternées pour la grille -->
+    <color name="letter_bg_1">#FF6B9D</color>
+    <color name="letter_bg_2">#A855F7</color>
+    <color name="letter_bg_3">#3B82F6</color>
+    <color name="letter_bg_4">#10B981</color>
+    <color name="letter_bg_5">#F59E0B</color>
+    <color name="letter_bg_6">#EF4444</color>
 
     <!-- ════════════════════════════════════════════════════════════════════
-         COULEURS D'ÉTAT - Feedback visuel
+         COULEURS D'ÉTAT - Feedback moderne
          ════════════════════════════════════════════════════════════════════ -->
 
-    <color name="success">#26DE81</color>
-    <color name="error">#FC5C65</color>
-    <color name="info">#54A0FF</color>
-    <color name="warning">#FECA57</color>
+    <color name="success">#10B981</color>
+    <color name="error">#EF4444</color>
+    <color name="info">#3B82F6</color>
+    <color name="warning">#F59E0B</color>
+    <color name="celebrate">#FFD93D</color>
 
     <!-- ════════════════════════════════════════════════════════════════════
-         COULEURS DE TOOLBAR - Barre d'outils moderne
+         COULEURS DE TOOLBAR - Header moderne
          ════════════════════════════════════════════════════════════════════ -->
 
-    <color name="toolbar_background">#5B9BD5</color>
+    <color name="toolbar_background">#FF6B9D</color>
     <color name="toolbar_text">#FFFFFF</color>
+    <color name="toolbar_gradient_start">#FF6B9D</color>
+    <color name="toolbar_gradient_end">#A855F7</color>
 
     <!-- Ombres et overlays -->
-    <color name="shadow">#1A000000</color>
-    <color name="overlay_light">#33FFFFFF</color>
-    <color name="ripple_light">#20FFFFFF</color>
+    <color name="shadow">#20000000</color>
+    <color name="shadow_colored">#30FF6B9D</color>
+    <color name="overlay_light">#40FFFFFF</color>
+    <color name="overlay_dark">#20000000</color>
+    <color name="ripple_light">#30FFFFFF</color>
+    <color name="ripple_colored">#20FF6B9D</color>
+
+    <!-- Decorations -->
+    <color name="star_gold">#FFD700</color>
+    <color name="sparkle">#FFE066</color>
+    <color name="bubble">#B8F3FF</color>
+
 </resources>

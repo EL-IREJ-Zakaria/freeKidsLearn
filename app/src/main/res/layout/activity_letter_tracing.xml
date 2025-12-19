@@ -1,62 +1,75 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!-- ========================================================================
-     ACTIVITY_LETTER_TRACING.XML - Écran de traçage moderne pour enfants
+<?xml version="1.0" encoding="utf-8"?><!-- ========================================================================
+     ACTIVITY_LETTER_TRACING.XML - Écran de traçage Candy Fun
      ========================================================================
      L'écran principal d'apprentissage où l'enfant:
      - Voit la lettre en très grand format
      - Écoute la prononciation
-     - Trace avec son doigt sur le canvas
+     - Trace avec son doigt sur le canvas magique
 
-     Design ludique avec grands boutons colorés et feedback visuel.
+     Design ludique avec boutons colorés et zone de dessin attrayante.
      ======================================================================== -->
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="@color/background_light">
+    android:background="@drawable/bg_gradient_main">
 
     <!-- ════════════════════════════════════════════════════════════════
-         SECTION 1: Toolbar moderne
+         SECTION 1: Header avec dégradé magique
          ════════════════════════════════════════════════════════════════ -->
     <com.google.android.material.card.MaterialCardView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:cardCornerRadius="0dp"
-        app:cardElevation="@dimen/toolbar_elevation"
-        app:cardBackgroundColor="@color/primary">
+        app:cardElevation="8dp"
+        app:strokeWidth="0dp">
 
-        <com.google.android.material.appbar.MaterialToolbar
-            android:id="@+id/toolbar"
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="@dimen/toolbar_height"
-            android:background="@android:color/transparent"
-            app:titleTextColor="@color/white"
-            app:titleTextAppearance="@style/TextAppearance.Material3.TitleLarge"
-            app:navigationIconTint="@color/white"
-            app:navigationIcon="@drawable/ic_arrow_back"
-            app:title="@string/trace_letter" />
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_toolbar_gradient"
+            android:orientation="vertical">
+
+            <com.google.android.material.appbar.MaterialToolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/toolbar_height"
+                android:background="@android:color/transparent"
+                app:titleTextColor="@color/white"
+                app:titleCentered="true"
+                app:titleTextAppearance="@style/TextAppearance.Material3.TitleLarge"
+                app:navigationIconTint="@color/white"
+                app:navigationIcon="@drawable/ic_arrow_back"
+                app:title="@string/trace_letter" />
+
+            <!-- Coins arrondis en bas du header -->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="24dp"
+                android:background="@drawable/bg_header_bottom_curve" />
+
+        </LinearLayout>
 
     </com.google.android.material.card.MaterialCardView>
 
     <!-- ════════════════════════════════════════════════════════════════
-         SECTION 3: Zone de dessin (Canvas) - Style ardoise moderne
+         SECTION 2: Zone de dessin magique
          ════════════════════════════════════════════════════════════════ -->
     <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
-        android:paddingHorizontal="@dimen/spacing_medium"
-        android:paddingBottom="@dimen/spacing_small">
+        android:padding="@dimen/spacing_medium">
 
         <com.google.android.material.card.MaterialCardView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            app:cardCornerRadius="@dimen/card_corner_radius_large"
-            app:cardElevation="@dimen/card_elevation_high"
+            app:cardCornerRadius="28dp"
+            app:cardElevation="8dp"
             app:cardBackgroundColor="@color/white"
-            app:strokeWidth="3dp"
-            app:strokeColor="@color/primary_light">
+            app:strokeWidth="4dp"
+            app:strokeColor="@color/letter_outline">
 
             <!-- Zone de dessin personnalisée -->
             <com.example.freekidslearn.ui.DrawingView
@@ -66,72 +79,107 @@
 
         </com.google.android.material.card.MaterialCardView>
 
-        <!-- Icône crayon décorative -->
+        <!-- Emoji crayon décoratif -->
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="top|end"
-            android:layout_margin="@dimen/spacing_medium"
-            android:text="✏️"
-            android:textSize="@dimen/text_size_xlarge" />
+            android:layout_margin="@dimen/spacing_large"
+            android:text="\u270F\uFE0F"
+            android:textSize="32sp" />
+
+        <!-- Instruction en bas -->
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center_horizontal"
+            android:layout_marginBottom="@dimen/spacing_medium"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="4dp"
+            app:cardBackgroundColor="#80FFFFFF">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/trace_instruction"
+                android:textSize="14sp"
+                android:textColor="@color/text_secondary"
+                android:paddingHorizontal="16dp"
+                android:paddingVertical="8dp" />
+
+        </com.google.android.material.card.MaterialCardView>
 
     </FrameLayout>
 
     <!-- ════════════════════════════════════════════════════════════════
-         SECTION 4: Boutons de contrôle - Design moderne et coloré
+         SECTION 3: Boutons de contrôle - Design coloré et fun
          ════════════════════════════════════════════════════════════════ -->
-    <LinearLayout
+    <com.google.android.material.card.MaterialCardView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:padding="@dimen/spacing_medium"
-        android:gravity="center">
+        app:cardCornerRadius="28dp"
+        app:cardElevation="8dp"
+        app:cardBackgroundColor="@color/white"
+        android:layout_marginHorizontal="@dimen/spacing_medium"
+        android:layout_marginBottom="@dimen/spacing_medium">
 
-        <!-- Bouton Précédent - Style outline -->
-        <com.google.android.material.button.MaterialButton
-            android:id="@+id/buttonPrevious"
-            android:layout_width="0dp"
-            android:layout_height="@dimen/button_height"
-            android:layout_weight="1"
-            android:layout_marginEnd="@dimen/spacing_small"
-            android:text="◀ Préc."
-            android:textSize="@dimen/text_size_medium"
-            android:textColor="@color/primary"
-            app:cornerRadius="@dimen/button_corner_radius"
-            app:strokeWidth="2dp"
-            app:strokeColor="@color/primary"
-            style="@style/Widget.Material3.Button.OutlinedButton" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="@dimen/spacing_medium"
+            android:gravity="center">
 
-        <!-- Bouton Effacer - Style accent (orange) -->
-        <com.google.android.material.button.MaterialButton
-            android:id="@+id/buttonClear"
-            android:layout_width="0dp"
-            android:layout_height="@dimen/button_height"
-            android:layout_weight="1"
-            android:layout_marginHorizontal="@dimen/spacing_small"
-            android:text="🗑️ Effacer"
-            android:textSize="@dimen/text_size_medium"
-            android:textColor="@color/white"
-            app:backgroundTint="@color/accent"
-            app:cornerRadius="@dimen/button_corner_radius"
-            app:elevation="@dimen/card_elevation"
-            style="@style/Widget.Material3.Button" />
+            <!-- Bouton Précédent - Violet -->
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/buttonPrevious"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/button_height"
+                android:layout_weight="1"
+                android:layout_marginEnd="@dimen/spacing_small"
+                android:text="\u25C0"
+                android:textSize="24sp"
+                android:textColor="@color/white"
+                app:backgroundTint="@color/button_nav"
+                app:cornerRadius="20dp"
+                app:elevation="4dp"
+                style="@style/Widget.Material3.Button" />
 
-        <!-- Bouton Suivant - Style filled primary -->
-        <com.google.android.material.button.MaterialButton
-            android:id="@+id/buttonNext"
-            android:layout_width="0dp"
-            android:layout_height="@dimen/button_height"
-            android:layout_weight="1"
-            android:layout_marginStart="@dimen/spacing_small"
-            android:text="Suiv. ▶"
-            android:textSize="@dimen/text_size_medium"
-            android:textColor="@color/white"
-            app:backgroundTint="@color/primary"
-            app:cornerRadius="@dimen/button_corner_radius"
-            app:elevation="@dimen/card_elevation"
-            style="@style/Widget.Material3.Button" />
+            <!-- Bouton Effacer - Rose -->
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/buttonClear"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/button_height"
+                android:layout_weight="1.5"
+                android:layout_marginHorizontal="@dimen/spacing_small"
+                android:text="@string/clear_button"
+                android:textSize="@dimen/text_size_medium"
+                android:textColor="@color/white"
+                app:icon="@drawable/ic_clear"
+                app:iconGravity="textStart"
+                app:iconTint="@color/white"
+                app:backgroundTint="@color/button_clear"
+                app:cornerRadius="20dp"
+                app:elevation="4dp"
+                style="@style/Widget.Material3.Button" />
 
-    </LinearLayout>
+            <!-- Bouton Suivant - Cyan -->
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/buttonNext"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/button_height"
+                android:layout_weight="1"
+                android:layout_marginStart="@dimen/spacing_small"
+                android:text="\u25B6"
+                android:textSize="24sp"
+                android:textColor="@color/white"
+                app:backgroundTint="@color/accent"
+                app:cornerRadius="20dp"
+                app:elevation="4dp"
+                style="@style/Widget.Material3.Button" />
+
+        </LinearLayout>
+
+    </com.google.android.material.card.MaterialCardView>
 
 </LinearLayout>

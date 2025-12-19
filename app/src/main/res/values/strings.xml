@@ -11,34 +11,49 @@
     <!-- ════════════════════════════════════════════════════════════════════
          ÉCRAN D'ACCUEIL - Textes de bienvenue
          ════════════════════════════════════════════════════════════════════ -->
-    <string name="welcome_title">Salut petit génie ! 🌟</string>
+    <string name="welcome_title">Salut petit champion !</string>
     <string name="choose_language">Quel alphabet veux-tu apprendre ?</string>
     <string name="arabic_alphabet">Alphabet Arabe</string>
     <string name="french_alphabet">Alphabet Français</string>
+
+    <!-- Emojis et décorations -->
+    <string name="mascot_emoji">\uD83E\uDD89</string> <!-- Hibou -->
+    <string name="emoji_arabic">\uD83C\uDF19</string> <!-- Lune -->
+    <string name="emoji_french">\uD83C\uDDEB\uD83C\uDDF7</string> <!-- Drapeau FR -->
+    <string name="footer_emoji">\u2728 \u2B50 \u2728</string>
+
+    <!-- Badges et infos -->
+    <string name="letters_count_arabic">28 lettres</string>
+    <string name="letters_count_french">26 lettres</string>
+    <string name="arabic_letters_preview">أ ب ت ث ج</string>
+    <string name="french_letters_preview">A B C D E</string>
+    <string name="play_now">C\'est parti !</string>
 
     <!-- ════════════════════════════════════════════════════════════════════
          LISTE DES LETTRES
          ════════════════════════════════════════════════════════════════════ -->
     <string name="letters_title">Les Lettres</string>
     <string name="choose_letter">Choisis une lettre !</string>
+    <string name="tap_to_learn">Touche pour apprendre</string>
 
     <!-- ════════════════════════════════════════════════════════════════════
          ÉCRAN DE TRAÇAGE
          ════════════════════════════════════════════════════════════════════ -->
-    <string name="trace_letter">Tracer la lettre ✏️</string>
+    <string name="trace_letter">Dessine la lettre</string>
     <string name="clear_button">Effacer</string>
-    <string name="repeat_sound">🔊 Écouter</string>
+    <string name="repeat_sound">Écouter</string>
     <string name="next_letter">Suivant</string>
     <string name="previous_letter">Précédent</string>
-    <string name="draw_here">Dessine ici avec ton doigt !</string>
+    <string name="draw_here">Dessine avec ton doigt !</string>
+    <string name="trace_instruction">Trace la lettre ici</string>
 
     <!-- ════════════════════════════════════════════════════════════════════
          MESSAGES D'ENCOURAGEMENT
          ════════════════════════════════════════════════════════════════════ -->
-    <string name="great_job">🎉 Super travail ! Tu es génial !</string>
-    <string name="try_again">Encore une fois ! Tu peux le faire ! 💪</string>
-    <string name="well_done">Bravo ! Continue comme ça ! ⭐</string>
-    <string name="keep_going">Tu y es presque ! 🚀</string>
+    <string name="great_job">Super travail ! Tu es génial !</string>
+    <string name="try_again">Encore une fois ! Tu peux le faire !</string>
+    <string name="well_done">Bravo ! Continue comme ça !</string>
+    <string name="keep_going">Tu y es presque !</string>
 
     <!-- ════════════════════════════════════════════════════════════════════
          ACCESSIBILITÉ

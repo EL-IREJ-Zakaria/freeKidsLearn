@@ -9,22 +9,33 @@ import com.example.freekidslearn.R
 import com.example.freekidslearn.data.Letter
 
 /**
- * RecyclerView adapter for displaying letters in a grid
+ * RecyclerView adapter for displaying letters in a colorful grid
  */
 class LetterAdapter(
     private val letters: List<Letter>,
     private val onLetterClick: (Letter) -> Unit
 ) : RecyclerView.Adapter<LetterAdapter.LetterViewHolder>() {
 
+    // Couleurs arc-en-ciel pour les cercles des lettres
+    private val circleBackgrounds = listOf(
+        R.drawable.circle_letter_pink,
+        R.drawable.circle_letter_purple,
+        R.drawable.circle_letter_blue,
+        R.drawable.circle_letter_green,
+        R.drawable.circle_letter_orange,
+        R.drawable.circle_letter_red
+    )
+
     inner class LetterViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
         private val textLetter: TextView = itemView.findViewById(R.id.textLetter)
-        private val textLetterName: TextView = itemView.findViewById(R.id.textLetterName)
-        private val textAnimal: TextView = itemView.findViewById(R.id.textAnimal)
+        private val circleBackground: View = itemView.findViewById(R.id.circleBackground)
 
-        fun bind(letter: Letter) {
+        fun bind(letter: Letter, position: Int) {
             textLetter.text = letter.letter
-            textLetterName.text = letter.name
-            textAnimal.text = letter.animal ?: ""
+
+            // Couleur arc-en-ciel basée sur la position
+            val colorIndex = position % circleBackgrounds.size
+            circleBackground.setBackgroundResource(circleBackgrounds[colorIndex])
 
             itemView.setOnClickListener {
                 onLetterClick(letter)
@@ -39,7 +50,7 @@ class LetterAdapter(
     }
 
     override fun onBindViewHolder(holder: LetterViewHolder, position: Int) {
-        holder.bind(letters[position])
+        holder.bind(letters[position], position)
     }
 
     override fun getItemCount(): Int = letters.size
