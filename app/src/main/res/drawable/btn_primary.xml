@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?><!-- Bouton principal rose avec dégradé -->
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_pressed="true">
+        <shape android:shape="rectangle">
+            <gradient android:type="linear" android:angle="90" android:startColor="#E85A8C" android:endColor="#D946EF" />
+            <corners android:radius="28dp" />
+        </shape>
+    </item>
+    <item>
+        <shape android:shape="rectangle">
+            <gradient android:type="linear" android:angle="90" android:startColor="#FF6B9D" android:endColor="#A855F7" />
+            <corners android:radius="28dp" />
+        </shape>
+    </item>
+</selector>

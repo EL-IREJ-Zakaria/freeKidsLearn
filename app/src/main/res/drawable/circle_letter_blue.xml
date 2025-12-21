@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?><!-- Cercle bleu océan pour les lettres -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="oval">
+    <gradient
+        android:type="radial"
+        android:gradientRadius="60dp"
+        android:centerX="0.3"
+        android:centerY="0.3"
+        android:startColor="#93C5FD"
+        android:endColor="#3B82F6" />
+</shape>

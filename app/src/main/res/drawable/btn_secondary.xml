@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?><!-- Bouton secondaire cyan -->
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_pressed="true">
+        <shape android:shape="rectangle">
+            <gradient android:type="linear" android:angle="90" android:startColor="#00B894" android:endColor="#06B6D4" />
+            <corners android:radius="28dp" />
+        </shape>
+    </item>
+    <item>
+        <shape android:shape="rectangle">
+            <gradient android:type="linear" android:angle="90" android:startColor="#00D4AA" android:endColor="#22D3EE" />
+            <corners android:radius="28dp" />
+        </shape>
+    </item>
+</selector>

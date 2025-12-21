@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?><!-- Bouton effacer rose clair -->
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_pressed="true">
+        <shape android:shape="rectangle">
+            <solid android:color="#EC4899" />
+            <corners android:radius="28dp" />
+        </shape>
+    </item>
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="#F472B6" />
+            <corners android:radius="28dp" />
+        </shape>
+    </item>
+</selector>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?><!-- Zone de dessin avec bordure colorée -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+    <solid android:color="#FFFFFF" />
+    <stroke
+        android:width="4dp"
+        android:color="#E879F9" />
+    <corners android:radius="28dp" />
+</shape>
